@@ -1,0 +1,101 @@
+mql5
+//+------------------------------------------------------------------+
+//|                                                     Perfect Algorithm MT5|
+//|                                     https://www.forexroboteasy.com|
+//|                                              Developed by Forex Robot Easy Team|
+//+------------------------------------------------------------------+
+
+// Define the maximum time limit for closing transactions
+#define MAX_TRANSACTION_TIME 3 * 60 * 60 // 3 hours
+
+//+------------------------------------------------------------------+
+//| Expert initialization function                                   |
+//+------------------------------------------------------------------+
+int OnInit()
+{
+    // Set up the necessary indicators and variables
+
+    return(INIT_SUCCEEDED);
+}
+
+//+------------------------------------------------------------------+
+//| Expert deinitialization function                                 |
+//+------------------------------------------------------------------+
+void OnDeinit(const int reason)
+{
+    // Clean up any resources used by the expert advisor
+}
+
+//+------------------------------------------------------------------+
+//| Expert tick function                                             |
+//+------------------------------------------------------------------+
+void OnTick()
+{
+    // Check for reversal points in the market
+    if (IsReversalPoint())
+    {
+        // Perform trading actions and close transactions within the time limit
+        CloseTransactions();
+    }
+}
+
+//+------------------------------------------------------------------+
+//| Check for reversal points in the market                          |
+//+------------------------------------------------------------------+
+bool IsReversalPoint()
+{
+    // Implement the code to identify reversal points
+
+    return true; // Replace with actual condition for identifying reversal points
+}
+
+//+------------------------------------------------------------------+
+//| Close all transactions within the maximum time limit             |
+//+------------------------------------------------------------------+
+void CloseTransactions()
+{
+    // Implement the code to close all transactions within the time limit
+
+    // Close transactions here
+
+    // Check if all transactions are closed within the time limit
+    if (IsAllTransactionsClosed())
+    {
+        // Minimize the risk associated with Forex trading
+        MinimizeRisk();
+    }
+}
+
+//+------------------------------------------------------------------+
+//| Check if all transactions are closed within the time limit       |
+//+------------------------------------------------------------------+
+bool IsAllTransactionsClosed()
+{
+    // Implement the code to check if all transactions are closed within the time limit
+
+    return true; // Replace with actual condition for checking if all transactions are closed
+}
+
+//+------------------------------------------------------------------+
+//| Minimize the risk associated with Forex trading                  |
+//+------------------------------------------------------------------+
+void MinimizeRisk()
+{
+    // Implement the code to minimize the risk associated with Forex trading
+
+    // Minimize risk here
+
+    // Increase the likelihood of profitable trades
+    IncreaseProfitability();
+}
+
+//+------------------------------------------------------------------+
+//| Increase the likelihood of profitable trades                     |
+//+------------------------------------------------------------------+
+void IncreaseProfitability()
+{
+    // Implement the code to increase the likelihood of profitable trades
+
+    // Increase profitability here
+}
+
